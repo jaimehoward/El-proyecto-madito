@@ -1,0 +1,11 @@
+<?php 
+    if(isset($_SESSION['unique_id'])){
+    if(336153552==$_SESSION['unique_id']){  
+        include("navbaradmin.php"); 
+    }
+    else{
+        include("navbarusu.php");
+    }}else{
+        include("navbarusu.php");       
+    }     
+  ?>
