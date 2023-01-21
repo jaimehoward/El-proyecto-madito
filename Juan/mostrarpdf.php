@@ -38,7 +38,9 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas</title>
+    <link href="styleshow.css" rel="stylesheet">
 </head>
+<br>
 <form>
   <input type="submit" formaction="index.php" value="Volver a la carga de archivos">
 </form>

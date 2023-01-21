@@ -19,10 +19,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>
-       Pagina para cargar pdfs
+       Carga de PDF
     </h1>
     <form action="upload.php" method="post" enctype="multipart/form-data">
         <label for="name">Ingresa el nombre del documento:</label><br>
@@ -31,13 +32,17 @@
         <input type="file" name="pdf" id="pdf" required><br><br>
         <input type="submit" value="Cargar PDF">
       </form>
-
+    <br>
       <form>
-        <input type="submit" formaction="mostrarpdf.php" value="Ver los pdfs">
+        <input type="submit" formaction="mostrarpdf.php" value="Ver los pdfs" class="botonazo">
       </form>
       <br>
       <form>
-      <input type="submit" formaction="logout.php" value="Desconectar la sesion">
+      <input type="submit" formaction="logout.php" value="Desconectar la sesion" class="botonazo">
+      </form>
+      <br>
+      <form>
+      <input type="submit" formaction="verpdf.php" value="Vista de los alumnos" class="botonazo">
       </form>
 
 </body>
