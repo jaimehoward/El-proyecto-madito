@@ -30,6 +30,13 @@
         <input type="text" name="name" id="name" required><br><br>
         <label for="pdf">Selecciona un archivo PDF para cargar:</label><br>
         <input type="file" name="pdf" id="pdf" required><br><br>
+        <label for="categ">Elegir a que categoria debe ir el archivo
+          <select id="categ" name="categ">
+            <option value="1">A</option>
+            <option value="2">B</option>
+            <option value="3">C</option>
+          </select>
+        </label>
         <input type="submit" value="Cargar PDF">
       </form>
     <br>
@@ -42,7 +49,13 @@
       </form>
       <br>
       <form>
-      <input type="submit" formaction="verpdf.php" value="Vista de los alumnos" class="botonazo">
+      <input type="submit" formaction="verpdfCateg1.php" value="Categoria 1" class="botonazo">
+      </form>
+      <form>
+      <input type="submit" formaction="verpdfcateg2.php" value="Categoria 2" class="botonazo">
+      </form>
+      <form>
+      <input type="submit" formaction="verpdfcateg3.php" value="Categoria 3" class="botonazo">
       </form>
 
 </body>

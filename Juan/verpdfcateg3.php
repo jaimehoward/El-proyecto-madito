@@ -12,7 +12,7 @@ if (!isset($_SESSION['user'])) {
 
 // si el usuario se logueo ahora se muestra esto
 // busca los nombres y paths de los archivos
-$stmt = $pdo->prepare('SELECT nombre, filename FROM documents ORDER BY nombre ASC');
+$stmt = $pdo->prepare('SELECT nombre, filename FROM documents WHERE categoria= 3 ORDER BY nombre ASC');
 $stmt->execute();
 
 // itera a traves de ellos y los muestra como links
