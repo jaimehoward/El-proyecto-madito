@@ -14,14 +14,20 @@ if (!isset($_SESSION['user'])) {
 $name = $_POST['name'];
 $pdf = $_FILES['pdf'];
 $categ = $_POST['categ'];
+$image = $_FILES['image'];
+
 
 // Crea un id unico
 $filename = uniqid() . '.pdf';
+$imageFilename = uniqid() . '.jpg';
+
+move_uploaded_file($image['tmp_name'], 'imagenes/' . $imageFilename);
+
 // los mueve a la carpeta pdfs
 move_uploaded_file($pdf['tmp_name'], 'pdfs/' . $filename);
 // lo guarda en la bdd 
-$stmt = $pdo->prepare('INSERT INTO documents (nombre, filename, categoria) VALUES (?, ?, ?)');
-$stmt->execute([$name, $filename, $categ]);
+$stmt = $pdo->prepare('INSERT INTO documents (nombre, filename, categoria, image) VALUES (?, ?, ?,?)');
+$stmt->execute([$name, $filename, $categ, $imageFilename]);
 ?>
 <!DOCTYPE html>
 <html lang="en">

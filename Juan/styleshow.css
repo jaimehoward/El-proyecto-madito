@@ -28,3 +28,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+.gallery img{
+    width: 32%;
+  max-width: 350px;
+  height: 300px;
+  column-count: 3;
+}

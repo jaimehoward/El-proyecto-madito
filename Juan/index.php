@@ -30,6 +30,8 @@
         <input type="text" name="name" id="name" required><br><br>
         <label for="pdf">Selecciona un archivo PDF para cargar:</label><br>
         <input type="file" name="pdf" id="pdf" required><br><br>
+        <label for="image">Selecciona una imagen para cargar (portada del archivo):</label><br>
+        <input type="file" name="image" id="image" required><br><br>
         <label for="categ">Elegir a que categoria debe ir el archivo
           <select id="categ" name="categ">
             <option value="1">A</option>
