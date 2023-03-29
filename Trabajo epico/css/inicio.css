@@ -18,11 +18,16 @@
 }
 
 .pie{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
     background: #2e2c2c;
-    padding: 2em 0;
-    text-align: center;
+    padding: 0em 0em 0em 0em;
+    margin: 0;
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -39,10 +44,13 @@ a{
     text-decoration: none;
 }
 
-img{
-    display: block;
+.logo{
+    display: inline;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: 35%;
 }
 
 .color:hover{
@@ -51,18 +59,33 @@ img{
 }
 
 .redes{
-    width: 3%;
-    height: 3%;
+    width: 15%;
+    height: 15%;
     display: inline;
-    margin: 0em 0em 0.5em 0em;
+    margin: 0em 0em 0.5em 2em;
 }
 
 footer h1{
-    font-size: 1em;
+    font-size: 2em;
+    display: inline;
     color: antiquewhite;
-    margin: 0em 0em 1em 0em;
+    margin: 0em 0em 1em 1em;
 }
 
 footer p{
+    margin-left: 0.3em;
+    display: inline;
     color: antiquewhite;
+    font-size: 1.5em;
+}
+
+.caja{
+    border-right: solid white 6px;
+}
+
+.caja img{
+    
+    border-left: solid white 6px;
+    
+    display: inline;
 }

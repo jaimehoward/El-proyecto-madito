@@ -1,0 +1,189 @@
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+.fondo{
+    background-image: url("../img/fondo.jpg");
+    height: auto;
+    max-width: 100%;
+}
+
+body{
+    background-color: #FAEBD7 !important;
+}
+
+
+.dale{
+    z-index: -3;
+    background-color: #FAEBD7;
+    margin: 1em;
+    position: static;
+    padding: 3em 3em 3em 3em;
+    margin: 0;
+}
+
+.text{
+    font-size: 2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.titulo{
+    margin-top: 1%;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.hiper{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+.barra{
+    background-color: #2e2c2c;
+    width: 100%;
+    padding: 1.5em 0em 1.5em 0em;
+    border-top: 0.1px solid white;
+}
+
+a{
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    cursor:hand;
+    color: azure;
+    text-decoration: none;
+}
+
+.hiper1{
+    justify-content: center;
+    
+}
+
+.color1{
+    background-color: #883235 ;
+    display: inline-block;
+    width: 13%;
+    height: 2%;
+    margin-top: 3%;
+    margin-left: 2em;
+    margin-right: 2em;
+    border-radius: 10px 20px 10px 20px;
+}
+
+.logo{
+    display: block;
+    margin-left: 30%;
+    padding-top: 1em;
+    width: 40%;
+    height: 20%;
+    
+}
+
+.color:hover{
+    color: #FFEBCD;
+    font-size: 1.01em;
+}
+
+.fecha{
+    background: linear-gradient(to bottom, hsl(221, 58%, 27%, 0.3), hsl(358, 46%, 36%, 0.7));
+    width: 85%;
+    height: 4%;
+    margin-left: 1em;
+    border-radius: 40px 20px 40px 20px;
+    display: block;
+}
+
+.fecha2{
+    width: 100%;
+    margin-left: 2%;
+}
+
+.color2{
+        background: linear-gradient(to bottom, hsl(221, 58%, 27%, 0.3), hsl(358, 46%, 36%, 0.7)),url("../img/Curso.jpg")no-repeat center;
+        border-radius: 10px 50px;
+        background-color: #fff;
+        width: 85%;
+        height: 300px;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        background-size: cover;
+        margin: 1em;
+        box-shadow: 4px 4px 8px 2px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+  background-color: #0A2344;
+}
+
+.accordion {
+  width: 100%;
+  margin: 1em auto;
+  color: black;
+  padding: 45px 45px;
+}
+
+.accordion .container {
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 3em;
+  color: black;
+  cursor: pointer;
+}
+
+.accordion .label:hover {
+   color: #883235 
+  }
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+.accordion .content {
+  margin-top: 0.5em;  
+  position: relative;
+  height: 0;
+  font-size: 4em;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+}
+
+.accordion .container.active .content {
+  height: 150px;
+}
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 30px;
+}
