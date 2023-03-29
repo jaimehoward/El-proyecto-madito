@@ -24,15 +24,17 @@ if (count($cursos) > 0) {
     echo '<h3>' . $curso['titulo'] . '</h3>';
     echo '<h4>' . $curso['nombre_curso'] . '</h4>';
     echo '<p>' . $curso['descripcion'] . '</p>';
+    echo '<p><strong>Inicio:</strong> ' . $curso['fecha_ini'] . '</p>';
+    echo '<p><strong>Fin:</strong> ' . $curso['fecha_fin'] . '</p>';
+    echo '<p><strong>Inscripción:</strong> ' . $curso['fecha_ini_insc'] . ' hasta ' . $curso['fecha_fin_insc'] . '</p>';
     echo '<img src="imagenes/' . $curso['imagen'] . '" style="width: 20%; height: 20%;>'; 
     echo '</div>';
     echo '<hr>';
-    echo '</div>';
-
   }
 } else {
   echo '<p>No hay cursos disponibles en este momento.</p>';
 }
+
 ?>
 
 <!DOCTYPE html>
