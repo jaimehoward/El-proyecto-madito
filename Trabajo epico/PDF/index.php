@@ -20,8 +20,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pruebas</title>
     <link href="styles.css" rel="stylesheet">
+
 </head>
 <body>
+<script src="modal.js"></script>
     <h1>
        Carga de PDF
     </h1>
@@ -40,6 +42,10 @@
         <input type="submit" value="Cargar PDF">
       </form>
     <br>
+    
+    <form>
+        <input type="submit" formaction="cargacursos.php" value="Cargar cursos" class="botonazo">
+      </form>
       <form>
         <input type="submit" formaction="mostrarpdf.php" value="Ver los pdfs" class="botonazo">
       </form>
@@ -57,6 +63,19 @@
       <form>
       <input type="submit" formaction="verpdfcateg3.php" value="Categoria 3" class="botonazo">
       </form>
+
+      <form>
+      <input type="submit" formaction="vercursardos.php" value="Cursos para inscribirse" class="botonazo">
+      </form>
+
+      <form>
+      <input type="submit" formaction="cursosenprogreso.php" value="Cursos en progreso" class="botonazo">
+      </form>
+
+      <form>
+      <input type="submit" formaction="cursosporempezar.php" value="Cursos por empezar" class="botonazo">
+      </form>
+
 
 </body>
 </html>

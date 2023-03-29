@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="css/style.css" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">    
-    
+    <script src="modal.js"></script>
+
     <title>Justicia juvenil</title>
 	</head>
 	<body class="fondo">
@@ -24,8 +25,19 @@
         <a class="color" href="doctrina.html">Doctrina</a>
         <a class="color" href="judiprudencia.html">Judiprudencia</a>
         <a class="color">Sitios de interes</a>
-        <a class="color" href="cursos.html">Cursos</a>
-        <a href="PDF/login.html"> login </a>
+     <!-- Button to open the modal -->
+     <button onclick="openModal()">Ver cursos disponibles</button>
+
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+       <!-- Modal content -->
+       <div class="modal-content">
+         <span class="close">&times;</span>
+         <h2>Cursos disponibles</h2>
+         <div id="cursos"></div>
+       </div>
+     </div>        
+     <a href="PDF/login.html"> login </a>
         </div>
 	</body>
     
