@@ -42,5 +42,5 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 </head>
 <br>
 <form>
-  <input type="submit" formaction="index.php" value="Volver a la carga de archivos">
+  <input type="submit" formaction="admin.php" value="Volver a la carga de archivos">
 </form>

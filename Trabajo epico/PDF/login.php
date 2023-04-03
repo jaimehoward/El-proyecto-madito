@@ -19,7 +19,7 @@
     // ingresaste joya
     session_start();
     $_SESSION['user'] = $user;
-    header('Location: index.php');
+    header('Location: admin.php');
     exit;
   } else {
     // Lfallo el login te manda de vuelta al login

@@ -39,7 +39,7 @@ $stmt->execute([$name, $filename, $categ, $imageFilename]);
     <link href="style.css" rel="stylesheet">
 </head>
 <form>
-  <input type="submit" formaction="index.php" value="Volver a la carga de archivos">
+  <input type="submit" formaction="admin.php" value="Volver a la carga de archivos">
   <input type="submit" formaction="mostrarpdf.php" value="Ver los pdfs">
 </form>
 
