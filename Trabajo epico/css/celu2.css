@@ -1,0 +1,45 @@
+@media only screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90% !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap:30px !important; 
+        padding: 10px 0px !important;
+    }
+    .box2{
+        margin-left: 10% !important;
+     
+    }
+    
+    footer{
+        background-color: #0d2033;
+    }
+
+    .box{
+        margin-left: 35%;
+        text-align: center;
+    }
+
+    
+    .pie-pagina{
+        top: 100% !important;
+        height: 45%;
+    }
+    
+    .logo{
+        width: 40%;
+        height: 15%;
+        margin-left: 33%;
+    }
+
+    .titulo{
+        font-size: 1em;
+        margin-left: 2%;
+    }
+
+    .barra{
+        max-width: 800px;
+        height: 5%;
+        padding-top: 0.8em;
+        font-size: 1em;
+    }
+}

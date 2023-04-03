@@ -1,0 +1,32 @@
+@media only screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90% !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-gap:30px !important; 
+        padding: 10px 0px !important;
+    }
+    .box2{
+        margin-left: 10% !important;
+     
+    }
+    
+    footer{
+        background-color: #0d2033;
+    }
+
+    .box{
+        margin-left: 35%;
+        text-align: center;
+    }
+
+    
+    .pie-pagina{
+        top: 80% !important;
+        height: 51%;
+    }
+    
+    .logo{
+        width: 100%;
+        margin-left: 3%;
+    }
+}
