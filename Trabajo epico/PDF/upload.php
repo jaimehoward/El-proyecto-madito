@@ -17,11 +17,33 @@ $categ = $_POST['categ'];
 
 // Crea un id unico
 $filename = uniqid() . '.pdf';
+$imageFilename = uniqid() . '.jpg';
+
 // los mueve a la carpeta pdfs
 move_uploaded_file($pdf['tmp_name'], 'pdfs/' . $filename);
 // lo guarda en la bdd 
-$stmt = $pdo->prepare('INSERT INTO documents (nombre, filename, categoria) VALUES (?, ?, ?)');
-$stmt->execute([$name, $filename, $categ]);
+
+$pdfPath = 'pdfs/' . $filename;
+$imagePreviewPath = 'img/' . $imageFilename;
+
+$imagick = new \Imagick();
+$imagick->setResolution(300, 300); // Ajusta la resolución según tus necesidades
+$imagick->readImage($pdfPath . '[0]'); // Lee solo la primera página del PDF
+$imagick->setImageFormat('jpg'); // Establece el formato de la imagen de vista previa
+
+// Redimensiona la imagen de vista previa a un tamaño adecuado
+$imagick->scaleImage(300, 400, true);
+
+// Guarda la imagen de vista previa
+$imagick->writeImage($imagePreviewPath);
+
+// Libera la memoria utilizada por Imagick
+$imagick->clear();
+$imagick->destroy();
+
+
+$stmt = $pdo->prepare('INSERT INTO documents (nombre, filename, categoria, image) VALUES (?, ?, ?, ?)');
+$stmt->execute([$name, $filename, $categ, $imageFilename]);
 ?>
 <!DOCTYPE html>
 <html lang="en">

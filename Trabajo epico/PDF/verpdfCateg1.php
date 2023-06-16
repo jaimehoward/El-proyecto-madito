@@ -12,11 +12,13 @@ if (!isset($_SESSION['user'])) {
 
 // si el usuario se logueo ahora se muestra esto
 // busca los nombres y paths de los archivos
-$stmt = $pdo->prepare('SELECT nombre, filename FROM documents WHERE categoria= 1 ORDER BY nombre ASC');
+$stmt = $pdo->prepare('SELECT nombre, filename, image FROM documents WHERE categoria= 1 ORDER BY nombre ASC');
 $stmt->execute();
 
 // itera a traves de ellos y los muestra como links
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+   //lo de abajo trae la imagen del pdf y funciona como link
+   echo '<a href="pdfs/' . $row['filename'] . '" target="_blank"><img src="img/' . $row['image'] . '" width="10%" height="10%"></a>';
     echo '<a href="pdfs/' . $row['filename'] . '" target="_blank">' . $row['nombre'] . ' </a><br>';
     echo '<br>';
 }
